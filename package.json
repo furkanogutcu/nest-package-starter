@@ -6,6 +6,7 @@
   "license": "MIT",
   "readme": "README.md",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*",
     "docs/**/**",
@@ -19,6 +20,7 @@
     "start:dev": "tsc -w",
     "build": "tsc",
     "build:check": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build",
     "prepare": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
@@ -44,7 +46,9 @@
   "homepage": "https://github.com/furkanogutcu/nest-replace-me#readme",
   "peerDependencies": {
     "@nestjs/common": "^11.1.0",
-    "@nestjs/core": "^11.1.0"
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/testing": "11.1.0",
+    "@nestjs/platform-express": "^11.1.0"
   },
   "dependencies": {},
   "devDependencies": {
