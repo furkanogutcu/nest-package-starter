@@ -1,4 +1,4 @@
-# NestJS [REPLACE_ME]
+# nest-replace-me
 
 [![npm version](https://img.shields.io/npm/v/@furkanogutcu/nest-replace-me.svg)](https://www.npmjs.com/package/@furkanogutcu/nest-replace-me)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
